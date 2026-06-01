@@ -10,4 +10,9 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+   build: {
+    minify: false, // Desabilita minificação para debug
+    // ou
+    cssMinify: false // Só desabilita minificação de CSS
+  }
 })

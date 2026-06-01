@@ -1,8 +1,7 @@
-// postcss.config.js
 export default {
   plugins: {
-    'postcss-nesting': {},
+    'postcss-nesting': {}, // Plugin ANTES do Tailwind
     tailwindcss: {},
     autoprefixer: {},
-  },
+  }
 }
