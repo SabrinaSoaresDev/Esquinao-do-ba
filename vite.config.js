@@ -1,4 +1,4 @@
-// vite.config.js (versão simplificada)
+// vite.config.js (versão compatível com Vercel)
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
@@ -8,12 +8,17 @@ export default defineConfig({
     port: 3000,
   },
   build: {
-    minify: 'esbuild', // ou false
-    cssMinify: false,
+    outDir: 'dist',
+    sourcemap: false,
+    minify: 'esbuild',
+    target: 'es2020',
     rollupOptions: {
       output: {
         manualChunks: undefined
       }
     }
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom']
   }
 })
