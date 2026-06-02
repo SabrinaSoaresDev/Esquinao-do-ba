@@ -103,7 +103,7 @@ export default function Contato() {
                     className="flex-1 text-center bg-gradient-to-r from-purple-500 to-pink-500 text-white text-sm font-bold py-2 rounded-xl hover:opacity-90 transition flex items-center justify-center gap-1"
                   >
                     <FaInstagram className="w-4 h-4" />
-                    Instagram
+                    Instagram 
                   </a>
                 )}
                 {/* {config?.facebook && (
